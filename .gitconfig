@@ -22,7 +22,7 @@
     uncommit = reset HEAD^
     ltag = tag -l -n3
 	wdiff = diff --color-words
-	slog  = log --graph --topo-order --oneline
+	slog = log --oneline --topo-order --graph
     slog2 = log --graph --topo-order --abbrev-commit --date=relative --pretty=format:'%C(yellow)%h%Creset %s %Cgreen(%cr) %C(red)%d%Creset %C(bold blue)[%an]%Creset'
     targz = !git archive --prefix=`basename $PWD`/ master| gzip > `basename $PWD`.tar.gz
 
